@@ -43,6 +43,9 @@ public class HomeController {
 	@Autowired
 	private TestBean5 tb5;
 	
+	@Autowired
+	private TestBean6 tb6;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -62,6 +65,7 @@ public class HomeController {
 		model.addAttribute("tb3", tb3);
 		model.addAttribute("tb4", tb4);
 		model.addAttribute("tb5", tb5);
+		model.addAttribute("tb6", tb6);
 		
 		return "home";
 	}

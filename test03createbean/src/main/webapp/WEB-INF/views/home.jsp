@@ -43,6 +43,9 @@
 					<tr>
 						<td>${tb5 }</td>
 					</tr>
+					<tr>
+						<td>${tb6 }</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>

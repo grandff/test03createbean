@@ -3,27 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- Root Context: defines shared resources visible to all other web components -->
-	<!-- java 파일로 생성 안하고 root-context.xml에서 bean 생성을 할 수 있음(예전 방법이라고 함) -->
-	<!-- 생성되는 속도가 java보다 살짝 더 빠름 -->
-	
-	<!-- <bean id="tb3" class="test.com.createbean.TestBean3">
-		
-	</bean> -->
-	
-	<!-- bean에 값 초기화하기 -->
-	<bean id="tb3" class="test.com.createbean.TestBean3">
-		<constructor-arg><value>77</value></constructor-arg>
-		<constructor-arg><value>88</value></constructor-arg>
-		<constructor-arg><value>99</value></constructor-arg>			
-	</bean>
-	
-	<!-- bean에 값 초기화하기 2(setter, getter) -->
-	<bean id="tb4" class="test.com.createbean.TestBean4">
-		<property name="id"><value>yas</value></property>
-		<property name="pwd"><value>1234567!</value></property>
-	</bean>
-	
+	<!-- context 별도로 만들어서 생성 -->
 	<!-- bean4의 내용을 받아서 생성함 -->
 	<bean id="tb5" class="test.com.createbean.TestBean5">
 		<constructor-arg>
@@ -31,4 +11,53 @@
 		</constructor-arg>
 	</bean>
 	
+	<bean id="tb6" class="test.com.createbean.TestBean6">
+		<!-- map mapping -->
+		<property name="map">
+			<map>
+				<entry key="num">
+					<value>44</value>
+				</entry>
+				<entry key="id">
+					<value>ganna</value>
+				</entry>
+				<entry key="pwd">
+					<value>hi123456</value>
+				</entry>
+			</map>
+		</property>
+		<!-- set mapping 중복값 제거 -->
+		<property name="set">
+			<set>
+				<value>11</value>
+				<value>11</value>
+				<value>kimochi</value>
+				<value>kimochi</value>
+				<value>12345111</value>
+				<value>12345111</value>
+			</set>
+		</property>
+		<!-- list mapping 중복값 허용 -->
+		<property name="list">
+			<list>
+				<value>11</value>
+				<value>11</value>
+				<value>kimochi</value>
+				<value>kimochi</value>
+				<value>12345111</value>
+				<value>12345111</value>
+			</list>
+		</property>
+		<!-- 배열 mapping -->
+		<property name="strs">
+			<array>
+				<value>11</value>
+				<value>11</value>
+				<value>kimochi</value>
+				<value>kimochi</value>
+				<value>12345111</value>
+				<value>12345111</value>
+			</array>
+		</property>
+	</bean>
 </beans>

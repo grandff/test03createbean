@@ -23,12 +23,4 @@
 		<property name="id"><value>yas</value></property>
 		<property name="pwd"><value>1234567!</value></property>
 	</bean>
-	
-	<!-- bean4의 내용을 받아서 생성함 -->
-	<bean id="tb5" class="test.com.createbean.TestBean5">
-		<constructor-arg>
-			<ref bean="tb4"/>
-		</constructor-arg>
-	</bean>
-	
 </beans>
