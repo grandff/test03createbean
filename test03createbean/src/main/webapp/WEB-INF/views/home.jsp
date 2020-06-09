@@ -16,8 +16,10 @@
 	</head>
 	<body>
 		<div class="container">
+			<h1 class="display-3">Create Bean</h1>
+			
 			<table class="table table-dark table-hover">
-				<thead>
+				<thead class="thead-dark">
 					<tr>
 						<th>목록</th> 
 					</tr>
@@ -28,6 +30,18 @@
 					</tr>
 					<tr>
 						<td>${tb }</td>
+					</tr>
+					<tr>
+						<td>${tb2 }</td>
+					</tr>
+					<tr>
+						<td>${tb3 }</td>
+					</tr>
+					<tr>
+						<td>${tb4 }</td>
+					</tr>
+					<tr>
+						<td>${tb5 }</td>
 					</tr>
 				</tbody>
 			</table>

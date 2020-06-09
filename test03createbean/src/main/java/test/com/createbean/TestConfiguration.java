@@ -56,4 +56,12 @@ public class TestConfiguration {
 		// return new TestBean();
 		return new TestBean(11, 22, 33);
 	}
+	
+	@Bean
+	public TestBean2 testBean2() {
+		TestBean2 tb2 = new TestBean2();
+		tb2.setId("admin");
+		tb2.setPwd("hi1234567");
+		return tb2;
+	}
 }

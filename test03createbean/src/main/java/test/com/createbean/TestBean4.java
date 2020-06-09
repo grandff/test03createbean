@@ -3,15 +3,15 @@ package test.com.createbean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TestBean2 {
+public class TestBean4 {
 	
-	private static final Logger logger = LoggerFactory.getLogger(TestBean2.class);
+	private static final Logger logger = LoggerFactory.getLogger(TestBean4.class);
 	
 	private String id;
 	private String pwd;
 	
-	public TestBean2() {
-		logger.info("TestBean2() .... !! "); 
+	public TestBean4() {
+		logger.info("TestBean4() .... !! "); 
 	}
 	
 	public String getId() {
@@ -29,7 +29,7 @@ public class TestBean2 {
 	
 	@Override
 	public String toString() {
-		return "TestBean2 [id=" + id + ", pwd=" + pwd + "]";
+		return "TestBean4 [id=" + id + ", pwd=" + pwd + "]";
 	}
 	
 }

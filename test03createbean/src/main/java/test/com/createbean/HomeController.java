@@ -31,6 +31,18 @@ public class HomeController {
 	@Autowired
 	private TestBean tb;
 	
+	@Autowired
+	private TestBean2 tb2;
+	
+	@Autowired
+	private TestBean3 tb3;
+	
+	@Autowired
+	private TestBean4 tb4;
+	
+	@Autowired
+	private TestBean5 tb5;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -46,6 +58,10 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		model.addAttribute("list", list);
 		model.addAttribute("tb", tb);
+		model.addAttribute("tb2", tb2);
+		model.addAttribute("tb3", tb3);
+		model.addAttribute("tb4", tb4);
+		model.addAttribute("tb5", tb5);
 		
 		return "home";
 	}
